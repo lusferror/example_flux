@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Layout from './layout';
 import reportWebVitals from './reportWebVitals';
-
+const miVector = ['pera','manzana','cambur'];
+console.log(miVector.length);
+const miVariable = 'Hola Mundo';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Layout />
+    <Layout miVariable={miVariable} miVector={miVector}/>
   </React.StrictMode>
 );
 
